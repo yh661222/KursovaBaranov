@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.AddCoffeSceneController">
+   <children>
+      <ImageView fitHeight="612.0" fitWidth="679.0" layoutY="-44.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cute-astronaut-with-coffee-cup-cartoon-vector-icon-illustration-space-food-drink-icon_138676-1989.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="AddAmount" layoutX="432.0" layoutY="346.0" />
+      <TextField fx:id="AddPrice" layoutX="435.0" layoutY="410.0" />
+      <TextField fx:id="AddName" layoutX="435.0" layoutY="278.0" />
+      <Text layoutX="14.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якість аромату">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="186.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фізичний стан кави">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="178.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якість обсмажування">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цілісність зерен">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="435.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Назва">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font></Text>
+      <Text layoutX="435.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кількість, кг">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="439.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ціна за кг, грн">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="AddCoffeeButt" layoutX="229.0" layoutY="457.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="142.0" text="Додати каву">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="AddErr" layoutX="132.0" layoutY="43.0" prefHeight="35.0" prefWidth="316.0" textFill="RED">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="AddCoffeeBack" layoutX="519.0" layoutY="458.0" mnemonicParsing="false" text="Назад">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font></Button>
+      <Label layoutX="73.0" layoutY="263.0" text="Параметри кави">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="AddQuality" layoutX="14.0" layoutY="410.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="AddRoast" layoutX="178.0" layoutY="346.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="AddType" layoutX="186.0" layoutY="410.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="AddFlavor" layoutX="14.0" layoutY="346.0" prefWidth="150.0" />
+      <Label fx:id="AddFreeSpace" layoutX="76.0" layoutY="200.0" prefHeight="27.0" prefWidth="442.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

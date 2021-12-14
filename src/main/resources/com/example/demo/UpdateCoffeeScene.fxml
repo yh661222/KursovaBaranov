@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.UpdateCoffeeSceneController">
+    <children>
+        <TableView fx:id="UpdateTable" prefHeight="388.0" prefWidth="864.0">
+            <columns>
+                <TableColumn fx:id="UpdateShowCoffeeName" prefWidth="111.0" text="Назва кави" />
+                <TableColumn fx:id="UpdateShowCoffeeType" prefWidth="140.0" text="Фізичний стан кави" />
+                <TableColumn fx:id="UpdateShowCoffeeQuality" prefWidth="112.0" text="Цілісність зерен" />
+                <TableColumn fx:id="UpdateShowCoffeeRoast" prefWidth="110.0" text="Якість обсмажування" />
+                <TableColumn fx:id="UpdateShowCoffeeFlavor" prefWidth="97.0" text="Якість аромату" />
+                <TableColumn fx:id="UpdateShowCoffeePrice" prefWidth="140.0" text="Ціна кави за кг, грн" />
+                <TableColumn fx:id="UpdateShowCoffeeAmount" prefWidth="153.0" text="Кількість кави,кг" />
+            </columns>
+        </TableView>
+        <ChoiceBox fx:id="UpdateType" layoutX="21.0" layoutY="517.0" prefWidth="150.0" />
+        <Text layoutX="14.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фізичний стан кави">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="UpdateRoast" layoutX="25.0" layoutY="587.0" prefWidth="150.0" />
+        <Text layoutX="14.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якість обсмажування">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="236.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якість аромату">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="231.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цілісність зерен">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="UpdateFlavor" layoutX="231.0" layoutY="517.0" prefHeight="25.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="UpdateQuality" layoutX="231.0" layoutY="587.0" prefWidth="150.0" />
+        <Button fx:id="UpdateBackButton" layoutX="782.0" layoutY="698.0" mnemonicParsing="false" text="Назад">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="UpdateApplyChanges" layoutX="328.0" layoutY="666.0" mnemonicParsing="false" text="Зберегти зміни">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font></Button>
+      <TextField fx:id="UpdatePrice" layoutX="471.0" layoutY="538.0" />
+      <TextField fx:id="UpdateAmount" layoutX="688.0" layoutY="538.0" />
+      <Text layoutX="471.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ціна за КГ:">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="688.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кількість, КГ:">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="68.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Параметри якості кави">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font></Text>
+      <Label fx:id="UpdateErr" layoutX="424.0" layoutY="521.0" />
+      <Separator layoutX="419.0" layoutY="383.0" orientation="VERTICAL" prefHeight="250.0" prefWidth="11.0" />
+      <Separator layoutX="6.0" layoutY="625.0" prefHeight="16.0" prefWidth="864.0" />
+      <Label layoutX="508.0" layoutY="420.0" text="Цифрові параметри кави">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.ShowCoffeeScenecController">
+   <children>
+      <TableView fx:id="ShowTableCoffee" prefHeight="543.0" prefWidth="864.0">
+        <columns>
+          <TableColumn fx:id="ShowCoffeeName" prefWidth="112.0" text="Назва кави" />
+          <TableColumn fx:id="ShowCoffeeType" prefWidth="126.0" text="Фізичний стан кави" />
+            <TableColumn fx:id="ShowCoffeeQuality" prefWidth="117.0" text="Цілісність зерен" />
+            <TableColumn fx:id="ShowCoffeeRoast" prefWidth="128.0" text="Якість обжрювання" />
+            <TableColumn fx:id="ShowCoffeeFlavor" prefWidth="118.0" text="Якість аромату" />
+            <TableColumn fx:id="ShowCoffeePrice" prefWidth="136.0" text="Ціна кави за кг, грн" />
+            <TableColumn fx:id="ShowCoffeeAmount" prefWidth="126.0" text="Кількість кави,кг" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="ShowTypeChoice" layoutX="37.0" layoutY="599.0" prefWidth="150.0" />
+      <Text layoutX="37.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фізичний стан кави">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="ShowRoastChoice" layoutX="249.0" layoutY="599.0" prefWidth="150.0" />
+      <Text layoutX="249.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якість обсмаження">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="456.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якість аромату">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="656.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цілісність зерен">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="ShowFlavorChoice" layoutX="456.0" layoutY="599.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="ShowQualityChoice" layoutX="656.0" layoutY="599.0" prefWidth="150.0" />
+      <Button fx:id="ShowApplyFilter" layoutX="342.0" layoutY="657.0" mnemonicParsing="false" onAction="#FilterTable" text="Застосувати фільтр">
+         <font>
+            <Font name="Corbel Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="ShowBackButt" layoutX="782.0" layoutY="698.0" mnemonicParsing="false" onAction="#SwitchToLoginScene" text="Назад">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

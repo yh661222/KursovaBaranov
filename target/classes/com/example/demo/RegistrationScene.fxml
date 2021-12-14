@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.RegSceneController">
+   <children>
+      <ImageView fitHeight="559.0" fitWidth="564.0" layoutX="-3.0" layoutY="-1.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../JavaCupLogo800x800.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="RgLogin" layoutX="202.0" layoutY="182.0" />
+      <PasswordField fx:id="RgPass" layoutX="202.0" layoutY="231.0" />
+      <PasswordField fx:id="RgPassCheck" layoutX="202.0" layoutY="279.0" />
+      <Text layoutX="127.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логін" />
+      <Text layoutX="131.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль" />
+      <Text layoutX="89.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Підтвердіть пароль" />
+      <Button fx:id="RgButt" layoutX="228.0" layoutY="444.0" mnemonicParsing="false" onAction="#initialize" text="Зареєструвати" />
+      <Label fx:id="RgErr" layoutX="135.0" layoutY="141.0" prefHeight="17.0" prefWidth="239.0" />
+      <Button fx:id="RgBack" layoutX="250.0" layoutY="494.0" mnemonicParsing="false" text="Назад" />
+   </children>
+</Pane>

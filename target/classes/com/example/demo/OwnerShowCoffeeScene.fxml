@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.OwnerShowCoffeeSceneController">
+    <children>
+        <TableView fx:id="OwnerShowCoffee" prefHeight="484.0" prefWidth="864.0">
+            <columns>
+                <TableColumn fx:id="OwnerShowCoffeeName" prefWidth="111.0" text="Назва кави" />
+                <TableColumn fx:id="OwnerShowCoffeeType" prefWidth="130.0" text="Фізичний стан кави" />
+                <TableColumn fx:id="OwnerShowCoffeeQuality" prefWidth="115.0" text="Цілісність зерен " />
+                <TableColumn fx:id="OwnerShowCoffeeRoast" prefWidth="137.0" text="Якість обсмажування" />
+                <TableColumn fx:id="OwnerShowCoffeeFlavor" prefWidth="103.0" text="Якість аромату" />
+                <TableColumn fx:id="OwnerShowCoffeePrice" prefWidth="150.0" text="Ціна кави за кг, грн" />
+                <TableColumn fx:id="OwnerShowCoffeeAmount" prefWidth="117.0" text="Кількість кави,кг" />
+            </columns>
+        </TableView>
+        <ChoiceBox fx:id="OwnerTypeChoice" layoutX="26.0" layoutY="569.0" prefHeight="25.0" prefWidth="150.0" />
+        <Text layoutX="11.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фізичний стан кави">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="OwnerRoastChoice" layoutX="26.0" layoutY="624.0" prefWidth="150.0" />
+        <Text layoutX="14.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якість обсмажування">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="232.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якість аромату">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="235.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цілісність зерен ">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="OwnerFlavorChoice" layoutX="232.0" layoutY="569.0" prefHeight="25.0" prefWidth="151.0" />
+        <ChoiceBox fx:id="OwnerQualityChoice" layoutX="233.0" layoutY="624.0" prefHeight="25.0" prefWidth="150.0" />
+        <Button fx:id="OwnerApplyFilter" layoutX="117.0" layoutY="670.0" mnemonicParsing="false" onAction="#FilterOwnerTable" text="Оновити таблицю">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="OwnerShowBack" layoutX="782.0" layoutY="698.0" mnemonicParsing="false" text="Назад">
+            <font>
+                <Font name="Corbel Bold" size="14.0" />
+            </font>
+        </Button>
+      <Button fx:id="OwnerUpdateCoffee" layoutX="653.0" layoutY="568.0" mnemonicParsing="false" text="Змінити параметри кави">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="OwnerDeleteCoffee" layoutX="432.0" layoutY="568.0" mnemonicParsing="false" onAction="#DeleteCoffee" prefHeight="28.0" prefWidth="187.0" text="Видалити каву">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="153.0" layoutY="504.0" text="Фільтри">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="401.0" layoutY="484.0" orientation="VERTICAL" prefHeight="263.0" prefWidth="22.0" />
+      <Label layoutX="566.0" layoutY="504.0" text="Інші Функції">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>
